@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f494806.css",
+    "main.js": "/static/js/main.ebdf6f44.js",
+    "static/media/yoda.png": "/static/media/yoda.87a0e67503e8032f24b3.png",
+    "static/media/background.jpg": "/static/media/background.9af4d3d953c95867b088.jpg",
+    "index.html": "/index.html",
+    "main.1f494806.css.map": "/static/css/main.1f494806.css.map",
+    "main.ebdf6f44.js.map": "/static/js/main.ebdf6f44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f494806.css",
+    "static/js/main.ebdf6f44.js"
+  ]
+}
