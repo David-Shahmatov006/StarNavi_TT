@@ -1,0 +1,38 @@
+@import '../../styles/mixins'
+
+.pagination
+    @include onPhone
+        justify-content: center
+
+    display: flex
+    align-items: center
+    gap: 15px
+
+    &__button
+        @include onPhone
+            width: 35px
+            height: 35px
+
+        width: 40px
+        height: 40px
+        background-color: #fff
+        color: red
+        border: 2px solid red
+        border-radius: 50%
+        cursor: pointer
+        font-size: 20px
+        transition: all ease-in-out .3s
+
+        &:hover
+            box-shadow: 0 0 30px red
+            background-color: #f9b9b9
+            transition: all ease-in-out .3s
+
+    .current
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #0864f7
+        border-color: #0864f7
+        background-color: #c6d3f9
+        box-shadow: 0 0 30px #0864f7

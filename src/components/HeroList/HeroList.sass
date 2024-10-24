@@ -1,0 +1,27 @@
+@import ../../styles/variables
+@import ../../styles/mixins
+
+.hero-list
+    @include onPhone
+        align-items: center
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    min-width: 300px
+    display: flex
+    flex-direction: column
+    gap: 5px
+    margin-bottom: 10px
+
+    &__item
+        @include onPhone
+            font-size: 20px
+
+        font-size: 27px
+        color: #fff
+        cursor: pointer
+        transition: all ease-in-out .3s
+
+        &:hover
+            color: $main-yellow
+            transform: scale(1.07)
+            transition: all ease-in-out .3s

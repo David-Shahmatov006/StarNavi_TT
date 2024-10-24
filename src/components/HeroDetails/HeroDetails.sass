@@ -1,0 +1,28 @@
+@import '../../styles/mixins'
+
+.hero-details
+    @include onPhone
+        height: 300px
+
+    @include onTablet
+        height: 400px
+
+    width: 100%
+    height: 500px
+
+    .react-flow
+        &__minimap-svg
+            @include onPhone
+                height: 100px
+                width: 100px
+
+            @include onTablet
+                height: 100px
+                width: 100px
+
+        &__node
+            @include onPhone
+                width: 120px
+                font-size: 15px
+
+            color: #272626

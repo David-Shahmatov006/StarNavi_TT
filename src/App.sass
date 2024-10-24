@@ -1,0 +1,39 @@
+@import './styles/variables'
+@import './styles/mixins'
+
+.star-wars-heroes
+    @include onPhone
+        margin: 30px
+
+    margin: 40px
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+    &__inner
+        @include onPhone
+            flex-direction: column-reverse
+            gap: 30px
+
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+
+    &__title
+        @include onPhone
+            font-size: 30px
+
+        font-size: 50px
+        text-align: center
+        color: $main-yellow
+        margin-bottom: 20px
+
+    &__choose-text
+        @include onPhone
+            font-size: 30px
+
+        @include onTablet
+            font-size: 40px
+
+        font-size: 50px
+        font-family: Tahoma
+        text-transform: uppercase
+        color: $main-yellow
